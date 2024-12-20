@@ -11,15 +11,19 @@ DB_URL = os.environ.get("DB_URL", "")  # Database connection URL
 DB_NAME = os.environ.get("DB_NAME", "maaljaal")  # Optional: Default DB name
 
 # Non-sensitive variables (can be hardcoded)
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))  # Channel ID for bot operations
-FORCE_SUB_CHANNEL = 0  # Force subscription channel ID, hardcoded as 0
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002444409596"))  # Channel ID for bot operations
+FORCE_SUB_CHANNELS = [
+    -1001234567890,  # Replace with your first channel ID
+    -1009876543210,  # Replace with your second channel ID
+    -1001112131415,  # Add more as needed
+]
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600"))  # Auto-delete files in seconds
 PORT = os.environ.get("PORT", "8080")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 # Admin setup
 try:
-    ADMINS = [6848088376]  # Add default admin(s)
+    ADMINS = [1720931455]  # Add default admin(s)
     for x in os.environ.get("ADMINS", "").split():
         ADMINS.append(int(x))
 except ValueError:
