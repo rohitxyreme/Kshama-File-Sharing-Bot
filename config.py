@@ -8,7 +8,7 @@ API_ID = int(os.environ.get("API_ID", ""))  # Telegram API ID
 API_HASH = os.environ.get("API_HASH", "")  # Telegram API hash
 OWNER_ID = int(os.environ.get("OWNER_ID", ""))  # Telegram user ID of the bot owner
 DB_URL = os.environ.get("DB_URL", "")  # Database connection URL
-DB_NAME = os.environ.get("DB_NAME", "madflixbotz")  # Optional: Default DB name
+DB_NAME = os.environ.get("DB_NAME", "maaljaal")  # Optional: Default DB name
 
 # Non-sensitive variables (can be hardcoded)
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))  # Channel ID for bot operations
